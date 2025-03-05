@@ -1,0 +1,22 @@
+<div class="product data items"
+     data-mage-init='{"mage/tabs": {"openedState": "active", "animate": {"duration": 100}, "active": 1}}'>
+
+    <div class="item title" data-role="collapsible">
+        <a class="switch" data-toggle="trigger" href="#tab-1">Tab 1</a>
+    </div>
+    <div id="tab-1" class="item content" data-role="content">
+        <?php echo $this->getChildHtml('perspective.carousel'); ?>
+    </div>
+
+    <div class="item title" data-role="collapsible">
+        <a class="switch" data-toggle="trigger" href="#tab-2">Tab 2</a>
+    </div>
+
+    <div id="tab-2" class="item content" data-role="content">
+        <button type="button" class="action" data-trigger="trigger">
+            <span data-bind="i18n: 'Popup'"></span>
+        </button>
+
+        <?php echo $this->getChildHtml('perspective.modal'); ?>
+    </div>
+</div>

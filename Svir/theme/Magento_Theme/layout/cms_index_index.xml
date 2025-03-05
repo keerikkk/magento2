@@ -1,8 +1,14 @@
 <?xml version="1.0"?>
-<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+<page layout="3columns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
         <referenceContainer name="content">
-            <block name="perspective.carousel" template="Magento_Theme::carousel.phtml"/>
+            <block name="perspective.tabs" template="Magento_Theme::tabs.phtml">
+                <block name="perspective.carousel" template="Magento_Theme::carousel.phtml" before="-"/>
+
+                <block name="perspective.modal" template="Magento_Theme::modal.phtml" before="-">
+                    <block name="perspective.modal.content" template="Magento_Theme::multiselect.phtml" before="-"/>
+                </block>
+            </block>
         </referenceContainer>
     </body>
 </page>
