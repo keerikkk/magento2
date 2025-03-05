@@ -10,5 +10,15 @@
                 </block>
             </block>
         </referenceContainer>
+
+        <referenceContainer name="div.sidebar.additional">
+            <referenceContainer name="sidebar.additional" remove="true" />
+
+            <block class="Magento\Cms\Block\Block" name="perspective.slider">
+                <arguments>
+                    <argument name="block_id" xsi:type="string">custom_slider</argument>
+                </arguments>
+            </block>
+        </referenceContainer>
     </body>
 </page>
