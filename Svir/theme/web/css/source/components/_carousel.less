@@ -1,18 +1,23 @@
-.carousel {
+#html-body {
 
-    .pagebuilder-column-line {
+    .carousel {
 
-        .slick-list {
-            width: 100%;
-            margin: 0 auto;
+        .pagebuilder-column-line {
 
-            .slick-slide {
+            .slick-list {
+                width: 100%;
+                margin: 0 auto;
 
-                [data-content-type="image"] {
-                    height: 28rem;
+                .slick-slide {
 
-                    img {
-                        height: 100%;
+                    [data-content-type="image"] {
+                        height: 28rem;
+
+                        [data-element="desktop_image"] {
+                            height: 100%;
+                            width: 100%;
+                            object-fit: cover;
+                        }
                     }
                 }
             }
