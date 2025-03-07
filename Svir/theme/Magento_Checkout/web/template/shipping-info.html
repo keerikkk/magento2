@@ -1,0 +1,8 @@
+<div class="free-shipping-info" data-bind="visible: isFreeShipping">
+    <div class="step-title" data-role="title" data-bind="text: freeTitle"></div>
+    <p class="desc" data-bind="text: freeDesc"></p>
+</div>
+<div class="table-rate-shipping-info" data-bind="visible: !isFreeShipping()">
+    <div class="step-title" data-role="title" data-bind="text: defaultTitle"></div>
+    <p class="desc" data-bind="text: defaultDesc"></p>
+</div>
